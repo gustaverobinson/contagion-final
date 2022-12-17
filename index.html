@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel='stylesheet' href="./index.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin=""/>
+        <title>Contagion Final</title>
+    </head>
+    <body>
+      <div style="padding: 2vh 2vw;">
+        <h1>
+          Diary of a Pandemic: A Week at Walmart Store #1654
+        </h1>
+        <h4>
+          Retold by Gus Robinson
+        </h4>
+      </div>
+      <div id="main-container">
+        <div class="row">
+          <div class="col-4" id="data-container">
+            <h3 id='data-box-title'>Introduction</h3>
+            <div id='data-box-description'>Walmart Inc’s Store #1654 is located in Baxter, Minnesota. During the initial Covid-19 pandemic quarantine of March 2020, the Supercenter became one of few public spaces frequented by many of Baxter’s eight thousand residents. Starting during the quarantine and continuing through August of that year, I gave 30 hours a week in service to my community as a second-shift stocker at the store.<br><br>The following diary entries weave together my memories of Walmart, its frontline workers, and the cross-section of America that wandered its aisles in search of baking ingredients, crafting scissors, and toilet paper during the pandemic’s adolescent days.<br><br>To start navigating through the diary, click one of the blue markers on the map to the left of this text and then select View Details.</div>
+            <button id="returnToIntro" style="display:none;">Return to Introduction</button>
+          </div>
+          <div class="col-8" id="map-container">
+            <div id="map"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Bootstrap Javascript Plugins-->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""></script>
+
+      <script type="text/javascript" src="./data.js"></script>
+      <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>

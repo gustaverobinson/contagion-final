@@ -1,0 +1,19 @@
+#main-container{
+    padding: 7vh 2vw;
+}
+
+#map { 
+    height: 75vh;
+}
+
+.row {
+    margin: 0;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+button {
+    margin-top: 2vh;
+}
